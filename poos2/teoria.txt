@@ -1,0 +1,18 @@
+definicion de clase
+es el plano , molde, plantilla
+
+##definicion de objeto
+instanciacion de la clase
+
+## Atributos y metodos
+- atributos caracteristicas del objeto lo que le pertenece a la clase
+    son las caracterisicas o variables internas
+    responde a la pregunta que tiene el objeto? color, precio, nombre
+
+- Metodos son las funciones o acciones (verbos)
+    responde a la pregunta: que sabe hacer el objeto (caminar, encender)
+    concepto de self:
+
+
+
+#Tema Nuevo

@@ -1,0 +1,7 @@
+print("Gracias por su visita")
+productoCliente = input("cual fue su producto favorito?")
+print("cual fue su producto favorito:" ,end="" )
+print(productoCliente)
+calificacion = input("califique nuestra tienda del 1 al 10?")
+print("calificacion:" ,end="" )
+print(calificacion)

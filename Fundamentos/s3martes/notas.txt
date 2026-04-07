@@ -1,0 +1,35 @@
+#review
+entrada input
+Salida output
+listas
+Ciclos 
+    while ciclo por condicion
+    for sabemos cuantas veces repetir el ciclo
+
+variables, tipos de datos: enteros etc
+*break: termina el ciclo
+*continue: ignora cierto aspecto del codigo y continua con el programa
+* if: condicion, puede ir acompa;ado del elif , o el else
+*operadores logicos: and or, not
+*operadores aritmeticos: +, -, *, /, //, (modulo)%
+operadores aritmeticos: ==, <, >, <=, >=, !=
+Match case: cuando hay varias posibles valores p[ara una variable]
+Tuplas: no se pueden modificar los datos dentro de las tuplas (inmutables)
+append agrega elementos a una listas
+del: para eliminar un elemento por su valor en una listas
+pop: eliminar el ultimo elemento de la lista
+puedo usar indexacion negativa (-1) para acceder el ulitmo elemento
+Len: cantidad de elementos que tiene una lista o la cantidad de caracteres que tiene un string
+Funciones:
+    def: define una funcion + el nombre de la funcion
+    parametros: valores que se reciben del usuario para poder realizar operaciones
+    return: devuelve un valor o varios al punto de invocacion
+    declaracion vs invocacion
+
+////////////////////////////////////////
+Tema nuevo
+
+#Listas de Listas  Y Diccionarios
+
+#Bucle anidado
+

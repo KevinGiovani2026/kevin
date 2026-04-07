@@ -1,0 +1,73 @@
+#diccionarios
+se usa lo que se llama "clave y valor"
+
+Le ponemos una etiqueta con nombre (clave) a la caja, y adentro guardamos la infoacion (valor)
+
+
+## modificar los valores en un diccionario
+
+---------------------------------------------
+lista modificar valoreslista_edades [5] = 50
+----------------------------------------------
+
+Ejercicio 
+crear un diccionario llamado 'cliente' con:
+-nombre
+-edad 
+-ciudad 
+
+imprimir cada valor utilizando la sintaxis correcta.
+modificar el diccionario 'cliente':
+
+-cambiar la ciudad.
+-aumentar la edad en 1.
+
+imprimir cada valor utilizando la sintaxis correcta
+
+
+##agregar elementos
+
+
+# forma 1 for clave in producto:
+    print(f"clave:{clave}: valor : {producto[clave]}")
+
+#forma 2
+for clave, valor in producto.items() :
+    print(f"clave:{clave}:")
+
+#ejercicio 
+#crear una lista lllamada prodcutos donde cada elemento sea un diccionario 
+los productos van a tener, nombre precio cantidad
+despues de ingresar fin vamos a mostrare el inventario con: 
+
+ejem 
+
+def mostrar_inventario(productos):
+    #forma 1 
+    for num_articulo in range (len(productos))
+    print(productos[num_articulos]["nombre"])
+    print(productos[num_articulos]["precio"])
+    print(productos[num_articulos]["cantidad"])
+    #pass # importante para mi proyecto
+
+    #forma 2 
+
+    #for  num_articulo in range  (len(productos)):
+    
+productos = []
+while true:
+    nombre = input("ingrese el nombre dle producto o ingrese FIN para terminar: ")
+    if nombre == "FIN": #ToDo: mejorar validacion
+        mostrar_inventario(productos)
+        break
+
+    precio = float(input("ingrese el precio del producto:"))
+    cantidad = int(input("ingrese la cantidad del producto:"))
+    
+    productito = {"nombre" : nombre, "precio" : precio, "cantidad" : cantidad}
+
+    productos.append(productito)
+
+
+
+

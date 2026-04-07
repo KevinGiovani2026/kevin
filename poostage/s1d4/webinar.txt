@@ -1,0 +1,78 @@
+QA Engineer /Quality Analyst
+
+Test Automatin Engineer
+SDET software develoment Engineer Testing
+
+
+QA LEAD 
+Habilidades Clave
+
+Test plan
+lista de passos
+test cases
+
+paso vs esperados # hay que documentar
+
+Reporte entregar evidencia de la falla, captura o video
+
+Beneficios QA
+menos bugs
+REduccion de costos
+Realeases mas rapidos
+Satisfaccion del cliente
+
+ISTQB
+El testing muestra presencia de defectos, no su ausencia
+
+El testing exhaustivo es imposible
+
+Testing temprano ahorra tiempo y dinero
+
+Defect Clustering
+
+Pesticide Paradox
+
+Testing dependiente del contexto 
+
+Ausencia de Errores es una falacia
+
+PSP     PERSONAL software PROCCES   
+
+CICLO PDCA + Agile/DEV OPS
+
+plan
+act
+do
+Check
+
+QA en entornos Agile
+Responsabilidad del equipo
+Shift-LEFT
+Pruebas continuas
+Colaboracion
+Herramientas
+
+Herramientas
+TESTRail, 
+jira
++xray
+azure Devops
+
+TEST driven develoment
+
+productos
+Claude, cline , continue, goose
+
+spur virtuoso testsprite
+Playwright, lighthouse
+
+
+Consejos
+
+Automatizacion inteligente
+Trazabilidad
+Capacitacion en Importante
+Integracion temprana 
+
+
+

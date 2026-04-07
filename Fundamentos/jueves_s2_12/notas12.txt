@@ -1,0 +1,108 @@
+jueves 12/03
+#leer nombre del cliente
+#leer la edad
+#leer el tipo de entrada
+#leer cantidad de dinero disponible
+#leer el precio de la bebida especial
+
+#validar si el cliente tiene 18+ y tiene una entrada VIP ( condicional)
+
+	# preguntar si desea comprar la bebida especial
+
+
+	#validar si la respuesta es un si (condicional)
+ 
+		#validar si es lciente tiene dinero suficiente para comprar la bebida especial 
+
+			#hacemos una resta del dinero disponible (-) precio de la bebida especial 
+
+			#mostrar el dinero restante (cambio)
+	
+		# si no
+			#mostrar un mensaje de que no tiene dinero suficiente para comprar la bebida
+
+# si no
+	#mostrar un mensaje de que no puede entrar al area VIP
+
+
+	Tareas Repetitivas ( bucles) (for, While)
+
+## while (mientras)
+el bucle 'while' repite un bloque de codigo *mientras* una condicion sea verdadera
+('true'). en el instante en que la condicion se vueve falsa ('false'), el ciclo termina
+
+### sintaxis
+'''  python
+while condicion:
+	#accion repetitiva que quiere que sucede
+
+ejemplo
+''' python
+contador = 1
+
+while contador <=3:
+	print("hola, soy el ciclo while")
+	print( "contador:", contador)	
+valor= float(input("ingrese un numero pequeno de aumento
+	contador = contador + valor
+////////////////////////////
+
+clave_correcta = "1234"
+intento = ""
+
+While intento != clave_correcta
+	intento = input("ingrese la clave:")
+
+print("!clave correcta! Acceso concedido.")
+///////////////////////////////////////////////
+
+
+opcion = ""
+
+while opcion != "salir" and opcion != "2"
+	print("1- Saludar")
+	print("2 - Salir")
+	opcion = input (ingrese una opcion:")
+
+	if opcion == "1" or opcion == "saudar":
+		print("hola, como estas")
+	elif opcion == "2" or opcion == "salir":
+	else:
+		print("Opcion no valida, por favor  ingrese una opcion valida.")
+//////////////////////////////
+##PALABRA INDEX IMPORTANTE
+
+##ciclo 'for;
+
+'range(cantidad)'
+### forma1: range(cantidad)
+#ejemplo:
+
+''''python
+for index in range(5)
+	print(index)
+''''
+////////////////////////////////////////
+for index in range (1,5):
+	print(index)
+forma3:  range
+for index in range(1,5,2)
+	print (index)
+
+for numero_turno in range(5):
+	print ("BeeP: Producto escaneado: (turno es:",numero_de turno + 1,")")
+forma2: range (inicio,cantidad)
+/////////////////////////////////////
+
+
+for pasillo in range(0,10,2):
+	print("limpiando el pasillo:", pasillo + 2)
+
+total = 0.0
+
+for articulo in range(4):
+	precio= float(input("ingrese el precio del articulo:"))
+	total += precio
+
+print9"el total a pagar es:', total)
+//////////////////////////////////////

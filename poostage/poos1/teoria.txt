@@ -1,0 +1,62 @@
+estructura
+
+Class molde:
+despues del pass
+
+definir una variable = class molde()
+
+atributos
+
+variable.nombre =
+variable. precio =
+variable.cantidad =
+
+como mostrar
+
+PALABRA SELF importante
+
+Metodo es una (funcion)
+
+
+Clase molde
+    funcion (self)
+     darle la funcion
+
+
+crear objeto  = molde 
+
+darle atributos 
+objeto creado.nombre
+             . cantidad
+             .edad
+             .estaturar
+
+llamar la funcion
+
+objeto.funcion()
+
+#/////////////////////////////////////
+# caja registradora
+1. crear una clase caja registradora
+2. dentro de nuestra clase, vamos a crear 2 metodos: 
+   - mostrar_dinero_actual: imprimir el dinero actual
+   - procesar_venta(): todas nuestras ventas son de 500. añadir a nuestro dinero actual los 500 de ganancia
+  
+3. fabricar una caja registradora
+4. le asignamos dinero inicial
+5. ponemos a trabajar nuestra caja registradora
+   - muestre el dinero 
+   - procese una venta
+   - muestre el dinero
+
+
+# Reto integrador: El Simulador de Mascota Virtual
+
+Vas a crear un programa que simule una mascota digital (como un Tamagotchi). La mascota tendrá un nombre y un nivel de energía inicial. El usuario podrá interactuar con ella para alimentarla (sube energía) o hacerla jugar (baja energía). El programa debe detenerse si la mascota se queda sin energía o si el usuario decide salir.
+1. Crea una plantilla llamada Mascota.
+2. Al nacer, la mascota debe recibir un nombre y fijar su energía en 100 puntos.
+3. Acción de alimentar: Crea una función interna que sume 20 puntos de energía cada vez que se use, pero que no permita exceder el máximo de 100.
+4. Acción de jugar: Crea una función que reste 30 puntos de energía. Importante: Usa una condición para verificar si tiene suficiente energía antes de jugar; si tiene menos de 30, debe avisar que está muy cansada.
+5. Implementa un bucle que se repita mientras la energía sea mayor a 0.
+6. Dentro del bucle, pregunta al usuario qué acción desea realizar (1. Alimentar, 2. Jugar, 3. Salir).
+7. Según lo que el usuario escriba, llama al método correspondiente de tu mascota.

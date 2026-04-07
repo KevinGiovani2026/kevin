@@ -1,0 +1,65 @@
+INICIO
+
+    Definir productos = {1:"Fertilizantes", 2:"Insecticidas", 3:"Herbicidas"}
+    Definir lotes[1..3] = 0
+    Definir unidades[1..3] = 0
+    Definir entregados[1..3] = 0
+
+    Definir total_lotes = 0
+    Definir total_unidades = 0
+
+    REPETIR
+        Leer entrada
+        SI entrada = "FIN" ENTONCES
+            SALIR DEL BUCLE
+        FIN SI
+
+        SI longitud(entrada) ≠ 5 ENTONCES
+            Imprimir "Dato inválido: " + entrada
+            CONTINUAR
+        FIN SI
+
+        producto ← convertir_a_numero(entrada[1])
+        cantidad ← convertir_a_numero(entrada[2..4])
+        entregado ← convertir_a_numero(entrada[5])
+
+        SI producto NO ESTÁ EN {1,2,3} ENTONCES
+            Imprimir "Dato inválido: " + entrada
+            CONTINUAR
+        FIN SI
+
+        lotes[producto] ← lotes[producto] + 1
+        unidades[producto] ← unidades[producto] + cantidad
+        SI entregado = 1 ENTONCES
+            entregados[producto] ← entregados[producto] + cantidad
+        FIN SI
+
+        total_lotes ← total_lotes + 1
+        total_unidades ← total_unidades + cantidad
+
+    HASTA QUE entrada = "FIN"
+
+    Imprimir "TABLA DE ESTADÍSTICAS"
+    Para cada producto en {1,2,3} HACER
+        promedio ← unidades[producto] / lotes[producto]
+        categoria ← ""
+        SI promedio < 100 ENTONCES categoria ← "Bajo"
+        SI promedio >= 100 Y promedio < 200 ENTONCES categoria ← "Medio"
+        SI promedio >= 200 ENTONCES categoria ← "Alto"
+
+        Imprimir columnas con ancho 15:
+            NombreProducto, lotes[producto], unidades[producto],
+            promedio redondeado a 2 decimales, categoria
+    FIN PARA
+
+    -- Resumen general
+    mayor_unidades ← producto con máximo en unidades[]
+    mayor_lotes ← producto con máximo en lotes[]
+    promedio_general ← total_unidades / total_lotes
+
+    Imprimir "Resumen:"
+    Imprimir "Producto con mayor cantidad de unidades: " + productos[mayor_unidades]
+    Imprimir "Producto con más lotes: " + productos[mayor_lotes]
+    Imprimir "Promedio general de unidades por lote: " + promedio_general redondeado a 2 decimales
+
+FIN

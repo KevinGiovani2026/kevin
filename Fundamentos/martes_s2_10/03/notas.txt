@@ -1,0 +1,132 @@
+    Martes 10 marzo
+review
+#tipos de datos 
+#operadores aritmeticos
+(+, - , * , /)
+#tipos de operaciones especiales ((modulo (%), division entera(//)
+# operadores logicos (and, not, or) 
+#operadores comparativos( >, <, ==(igual), >=, <=, !=(diferente))
+# casting int(), float()
+///////////////////////////////////////////
+
+Condicionales
+Identacion
+
+## La regla basica : el 'if'
+bloque condicional del if
+	me indica que esto le pertenee al bloque
+	esto tambien le pertenece
+
+bloque condicional del if
+	me indica que esto le pertenee al bloque
+	esto tambien le pertenece
+
+### sintaxis:
+''' python
+If condicion:
+''''
+
+### ejemplo
+''' python
+dinero=1000
+precio=750
+
+IF dinero >= precio:
+print("venta aprobada")
+'''
+//////////////////////////
+
+
+print("===SISTEMA DE SEGURIDAD DE LA BODEGA===)
+
+clave_ingresada = input("ingrese la clave de seguridad:")
+clave_correcta= "1234"
+
+if clave_ingresada == clave_correcta:
+	print("clave correcta. Acceso permitido.")
+	print("Bienvenido a la bodega super segura")
+Condicional else
+No lleva nunca una condicion al lado
+* es el basurero que recoge cualquier cosa que no haya cumplido con la regla del if
+****************************
+dinero= float(input("dinero del cliente:"))
+precio=1200
+
+if dinero >= precio:
+	print("puede comprar el producto")
+else:
+	print("no puede comprar el producto")
+
+********************************************
+un cine desea automatizar una parte de su sistema de control de acceso
+
+el programa debe de solicitar al usuario:
+-edad de la persona
+-si posee entrada comprada (si o no)
+si la persona tiene 18+ y tiene entrada, puede ingresar a la pelicula
+en caso contrario no se permite la entrada
+*********************************
+condiciones anidadas
+///////////////////////
+condicional elif
+////////////////////////
+edad= int(input("digite su edad:"))
+precio_entrada = 2000
+
+if edad<= 12:
+	print("el clinete es un nino, tiene un descuento del 50%")
+	total=precio_entrada * 0.5
+elif edad<= 60:
+	print("el clieete es un adulto mayor, tiene un descuento del 25%")
+	total=precio_entrada * 0.75
+else 
+	print("el clinete es un adulto, no tiene descuento)
+	total= precio_entrada 
+//////////////////////////////////////////////
+Escribe un programa que pida la cantidad de cajas de leche disponibles en la bodega. 
+* si la cantidad es mayor a 20, imprime "Inventario saludable"
+* Si la cantidad esta entre 1 y 20, imprime "ALERTA: Hacer pedido al proveedor "
+* Si la cantidad es exactamente 0, imprime "urgente: producto agotado"
+//////////////////////////////////////
+
+Condicional: switch (match/case)
+###sintaxis
+''' puthon
+match valor:
+	case patron1:
+	#acciones
+	case patron2:
+	#acciones
+	case _:
+	#acciones por defecto
+'''
+
+## ejemplo
+''' python
+opcion input("seleccione (1-3):")
+usuario= input ("ingrese su nombre de usuario)
+
+match opcion:
+	case "registrar" | "1":
+		print("registrando producto..")
+# equivalente a if (opcion == "registrar" or opcion == "1") and usuario == "admin"
+
+	case "mostrar" | "2":
+		print("mostrando inventario...")
+	case "salir" | "3" :
+		print("Saliendo...")
+	case_:
+		print("opcion invalido")
+/////////////////////////////////////////////
+operadores:
+'and' ye el 'or"
+or = | 
+//////////////////////////////////////
+## ¿ cuando usar 'match/case' vs ' if/elif/else'?
+
+###usar "match/case' cuando:
+- no hay muchas opciones claras (menus)
+- se quiere leer el codigo mas rapido.
+- Se agrupan varias opciones en un caso
+
+### usar 'if/elif/else cuando:
