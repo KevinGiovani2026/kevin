@@ -1,0 +1,47 @@
+#Encapsulamiento
+le pondremos un candadado a la informacion y crearemos  ventanillas de atencion
+Getters and Setters con guardias de seguridad
+
+
+Example
+Class Cuenta:
+    def __init__(self, saldo_inicial):
+        self.__saldo = saldo_inicial
+        self.nombre = "Publica"
+
+mi_cuenta = Cuenta(1000)
+print(mi_cuenta.nombre)
+print(mi_cuenta.__saldo)
+
+##LAs ventanillas de atencion: Getter y Setter 
+Construimos metodos publicos especificos llamados getters ( obtenedores)
+y Setters (configuradores).
+
+Getter es un metodo que solo sirve para retornar (return) el valor del atributo privado
+Setter es un metodo que recibe un parametro, lo somete a una validacion logica
+y modifica el atributo privado
+
+class UsuarioBancario:
+    def __init__(self, nombre_ingresado, pin_ingresado):
+        self.nombre = nombre_ingresado
+        #atributo privado
+        self.__pin = pin__ingresado
+
+    def get_pin(self):
+    return self.__pin
+
+    def set_pin(self,nuevo_pin):
+        #validacion
+        if len(nuevo_pin) <= 4 :
+
+Ejercicio Integrador: Registro Académico
+En sistemas reales, los métodos internos (Setters) casi nunca usan print(). Su trabajo no es hablar con el usuario, su trabajo es procesar los datos y devolver un Código Numérico al programa principal informando qué pasó. El programa principal recibe ese código y toma decisiones (como mostrar un menú, hacer un bucle o bloquear el sistema).
+Instrucciones del Ejercicio:
+Crea la clase RegistroAcademico.
+En el constructor init, recibe nombre_alumno y nota_inicial.
+Define tres atributos: self.nombre (público), self.__nota (privado) y self.cuenta_activa = True (estado inicial público por defecto).
+Crea el método get_nota(self) que retorne la nota privada.
+Crea un método bloquear_cuenta(self) que cambie el estado self.cuenta_activa a False.
+Crea el método set_nota(self, nueva_nota). La lógica debe ser:
+En el programa principal:
+
