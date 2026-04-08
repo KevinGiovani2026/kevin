@@ -21,3 +21,8 @@ class RegistroAcademico:
         else:
             print("Nota inválida. Debe estar entre 0 y 100.")
             return -1
+
+
+student1 = RegistroAcademico("kevin", 85)
+
+print(f"Nota Inicial {student1.get_nota()}")

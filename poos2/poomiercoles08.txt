@@ -1,0 +1,42 @@
+#EL estilo profesional de python (@property)
+
+
+#Sintaxis de decorador
+
+Getter: Escibimos @property justo encima del metodo
+El metodo Debe y Tiene que llamarse exactamente igual que el atributo privado
+sin guion bajo
+
+Setter : Escribimos @nombre_del_metodo.Setter justo encima  del metodo  modificador
+
+##micro ejemplo
+
+Class Temperatura:
+    def __init__(self):
+        self.__grados = 20
+
+    @property
+    def grados(self)
+        return self.__grados
+
+    @grados.Setter
+    def grados (self, nuevo_grado)
+        if nuevo_grado <0:
+            print("Temperatura Invalida)
+        else:
+            self.grados = nuevi_grado
+
+Clima = Temperatura()
+
+print(clima.grados)
+clima.grados = 50
+Print(clima.grados)
+
+###////////////////////////////////
+OTRO decorador
+
+@classmethod -----> "cls"
+
+
+
+
