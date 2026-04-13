@@ -1,0 +1,99 @@
+#Herencia basica
+## Princiio DRY: don't repeat yourself | No te repitas
+
+### Micro ejemplo
+
+### Solucion usando Herencia
+
+python
+class animal:
+    def comer(self)
+        print("El animal esta comiendo")
+
+#2. El hijo 
+
+Class Perro(Animal)
+    pass
+
+mi_mascota - Perro()
+
+mi _mascota.comer()
+
+### agregando habiliades exclusivas al hijo
+
+
+#///////////////////////////////////////////////
+Class Vehiculo:
+    def encender_motor(self)
+
+    def apagar_motor(self)
+
+Class autho(Vehiculo)
+    def encender_aire(self)
+
+class Moto(vehiculo):
+    def hacer_acrobacia(self)
+
+
+
+carro = auto() 
+moto = moto()
+
+print("acciones del auto")
+carro.encender_motor()
+carro.encender_aire()
+carro.apagar_motor
+
+print("acciones de la moto")
+moto.encender_motor
+moto.hacer_acrobacia
+
+####
+ejercicio
+
+todos caminar  y desansar
+#///////////////////////////////////////////////////
+
+class Persona:
+    def__init__(self, nombre):
+        #el pader hace su trabajo, inicizliza el nombre
+        self.nombre = nombre
+
+class Estudiante(Persona):
+    def__init__(self,nombre_ingresado,nota)
+        super().__init(nombre_ingresado)
+
+        self.nota = nota_ingresada
+
+
+    def mostrar_info(self):
+        print("Hola, mi nombre es{} y mi nota es: {}")
+
+
+
+#///////////////////////////////////////////////////////
+
+#Las muchas formas (polimorfismo)
+hay que escribir codigo que sobreviva a los cambios
+
+
+**Solid**:
+1 **s - Single Responsability  (responsabilidad unica): ***
+2 **O - Open/Closed (abierto y Cerrado): **
+3 **L - Liskov Substitution (Sustitucion de Liskov):**
+4 **I - Interface segregation (segregacion de Interfaces)
+5 **D - Dependecy Inversion (Inversion de Dependencias):**
+
+##La Rebelion del hijo (sobrescritura de Metodos)
+
+## el poder del polimorfismo
+
+## Combinar lo viejo con lo nuevo
+
+### 1. Usar 'super()' en Metodos normales
+
+### escenario1: Herencia SIN polimorfismoEs perfectamente posible
+heredar sin ser polimorfico. Esto ocurre cuando el hijo recibeel codigo del padre y ** lo usa exactamente igual**, sin cambiarle
+sin cambiarle ni una coma (sin sobrescribir ). El iho es una copia  fiel de comportamiento
+
+### Escenario 2: Polimorfismo 
