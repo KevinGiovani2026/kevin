@@ -1,0 +1,41 @@
+# Concepto abstracto
+
+class FiguraGeometrica():
+    def Calcular_area(self):
+        print("No se como calcular el area, no soy una figuara")
+
+class cuadrado(FiguraGeometrica)
+    def calcular_area(self):
+        print("area = lado * lado")
+
+
+figura_fantasma = FiguraGeometrica()
+figura_fantasma.calcular_area()
+
+
+abc = Abstract Base Classes
+debemos marcar al menos uno de sus metodos con el decorador '@abstractmethod'
+un metodo abstracto es un metodo vacio, no tiene codigo por dentro, usamos la palabra pass
+
+
+
+from abc import ABC, abstractmethod
+    
+class Documento(ABC)
+    def __init__(self,titulo):
+        self.titulo
+
+    @abstractmethod
+    def exportar(self):
+    pass
+
+
+class PDF(Documento)
+    def exportar 
+
+    ##Propiedades Abstractas
+    Ponemos '@property' seguido de @abstractmethod
+
+
+Herencia Multiple
+
