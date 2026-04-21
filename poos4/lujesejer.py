@@ -36,14 +36,14 @@ class VistaBiblioteca:
         return input("Seleccione una opción: ")
     
     @staticmethod
-    def solicitar_datos_libro(self):
+    def solicitar_datos_libro():
         id_libro = input("ID del libro: ")
         titulo = input("Título: ")
         autor = input("Autor: ")
         return id_libro, titulo, autor
     
     @staticmethod
-    def mostrar_lista_libros(self, libros):
+    def mostrar_lista_libros(libros):
         print("\nID | TÍTULO | AUTOR | ESTADO")
         for libro in libros:
             estado = "Prestado" if libro.prestado else "Disponible"
@@ -51,7 +51,7 @@ class VistaBiblioteca:
 
 
     @staticmethod
-    def solicitar_id(self):
+    def buscar_id():
         return input("Ingrese el ID del libro: ")
     
     @staticmethod
@@ -78,7 +78,7 @@ class ControladorBiblioteca:
                 self.vista.mostrar_lista_libros(libros)
                 
             elif opcion == "3":
-                id_l = self.vista.solicitar_id()
+                id_l = self.vista.buscar_id()
                 libro = self.modelo.buscar_libro_por_id(id_l)
                 if libro:
                     libro.marcar_como_prestado()
@@ -93,51 +93,12 @@ class ControladorBiblioteca:
                 self.vista.mostrar_mensaje("Opción no válida.")
 
 if __name__ == "__main__":
-    app = ControladorBiblioteca()
-    app.ejecutar()
+    controlador = ControladorBiblioteca()
+    controlador.ejecutar()
 
 
 
-#     ####
-#     # ejercicio de práctica: Sistema de Gestión de Biblioteca
 
-# La biblioteca municipal necesita un software sencillo para que los bibliotecarios puedan registrar libros y ver cuáles están disponibles.
-
-# - Modelo: (Libro y Biblioteca)
-
-#   - Debe contener la estructura del libro (Título, Autor, ID y un booleano prestado).
-
-#   - Debe tener la lógica para "marcar como prestado".
-
-#   - El modelo NO puede usar print() ni input().
 
  
 
-# - Vista: (VistaBiblioteca):
-
-#   - Debe contener todos los métodos que interactúan con el usuario.
-
-#   - Métodos para: mostrar el menú principal, pedir datos de un nuevo libro y listar todos los libros con su estado.
-
-#   - La vista no decide qué se guarda, solo recibe datos y los muestra.
-
-# - El Controlador (ControladorBiblioteca):
-
-#   - Es el "cerebro" que une a los otros dos.
-
-#   - Debe recibir las órdenes de la Vista y llamar a los métodos correspondientes del Modelo.
-
-#   - Debe manejar el bucle principal de la aplicación.
-
- 
-
-# - Requerimientos Funcionales:
-
-#   - Añadir Libro: Pedir datos y guardarlos.
-
-#   - Listar Libros: Mostrar una tabla con la información.
-
-#   - Prestar Libro: Buscar un libro por su ID y cambiar su estado a "Prestado".
-
-#   - Salir: Cerrar la aplicación.
-##/////////////
