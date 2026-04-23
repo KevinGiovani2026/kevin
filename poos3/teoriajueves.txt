@@ -1,0 +1,12 @@
+Try except
+
+Es un vs tienen un
+
+
+
+##Inyeccion de Piezas (Objetos como Parametros)
+
+Inyeccion de dependencias
+
+
+

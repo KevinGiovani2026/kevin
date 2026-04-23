@@ -1,0 +1,61 @@
+#Repaso
+-Herencia
+-polimorfismo
+-super
+-Princiio solid
+- sobrescritura en Metodos
+- __str__
+
+#Sobrecarga de operadores
+
+5 + 5 = 10
+"Hola" + "mundo" = "hola mundo" concatenando
+
+billetera1 + billetera2,
+-Para ense;ar el '+', sobreescribimos '__add__(self, otro_objeto)'
+- el '-', sobreescribimos  ' __sub__(self, otro_objeto)'
+- Para ense;ar el '>, sobreescribimos '__gt__(self, otro_objeto)' gt greater than
+- el '<" sobreescribimos ' __lt__(self, otro_objeto) less than | menos que
+-el '==', sobreescribimos ' __eq__(self, otro_objeto)' equal |igual
+
+
+##Ejercicio 
+Una clase producto, que el producto va a tener un nombre y un precio
+Los procutos se deben de sumar, restar y comparar entre ellos Para asi poder  clasificarlos
+se debe crear una serie de 4 productos
+deben de usar sobrecarga de operadores
+
+Modulo y librerias
+
+Imporando cajas
+Vamos a usar la palabra reservada import seguida del nombre de la caja
+
+import math
+
+raiz = math.sqrt(25)
+/////////////////////////////////////////
+Forma 2  Importar herrmaienta especifica
+Sintaxis   from  (nombre de la caja ) import [nombre de herramienta]
+
+from math  import pi,pow 
+area _circulo = pi * pow(5,2)
+
+print(area_circulo)
+/////////////////////////////////////
+forma 3 importar con un apodo 
+import datetime as dt
+
+fecha_de_hoy = dt.date.today()
+
+print(fecha_de_hoy)
+
+Forma 4: importar nuestras propias cajas de herramientas(modulos personalizados)
+
+opciones from (archivo) import *
+//////////////////////////////////////
+otra
+from modelos
+
+mi_maquina = modelos.calculadoraavanzada()
+///////////////////////////////////////
+
